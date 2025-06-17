@@ -1,4 +1,19 @@
 <B>Hello, world!</B>
 <script>
-  location.href= "http://100.81.20.202:8000/exp.html"
+  // location.href= "http://100.81.20.202:8443/exp.html"
+  ToutiaoJSBridge._handleMessageFromToutiao=function(p1){
+  let re = JSON.stringify(p1);
+  console.log('=1='+re)
+  alert(re)
+}
+var b = {
+  __callback_id: 'd',
+  func: "apiParam",
+  params: {
+    method: "GET",
+  },
+  JSSDK: "1.2.1",
+  __msg_type: "call"
+}
+window.ToutiaoJSBridge.invokeMethod(JSON.stringify(b))
 </script>
