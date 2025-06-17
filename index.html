@@ -15,5 +15,12 @@ var b = {
   JSSDK: "1.2.1",
   __msg_type: "call"
 }
-window.ToutiaoJSBridge.invokeMethod(JSON.stringify(b))
+  function call(){
+    window.ToutiaoJSBridge.invokeMethod(JSON.stringify(b))
+  }
 </script>
+<script src="./vconsole.min.js"></script>
+<script>
+	var vConsole = new VConsole()
+</script>
+<button style="width:250px;height:60px;font-size: 30px;" onclick="call()">call</button><br />
