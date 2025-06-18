@@ -17,4 +17,8 @@ var b = {
   function call(){
     window.ToutiaoJSBridge.invokeMethod(JSON.stringify(b))
   }
-call()
+try{
+  call()
+}catch(e){
+  alert(e)
+}
