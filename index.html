@@ -18,6 +18,9 @@ var b = {
   function call(){
     window.ToutiaoJSBridge.invokeMethod(JSON.stringify(b))
   }
+window.addEventListener('pageshow', function(e){
+	call()
+})
 </script>
 <script src="./vconsole.min.js"></script>
 <script>
