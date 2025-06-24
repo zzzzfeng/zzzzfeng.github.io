@@ -7,7 +7,7 @@ var b = {
   },
   JSSDK: "1.2.1",
   __msg_type: "call",
-  namespace: "webcast"
+  //namespace: "webcast"
 }
   function call(){
     window.ToutiaoJSBridge._handleMessageFromToutiao=function(p1){
