@@ -6,7 +6,8 @@ var b = {
     method: "GET",
   },
   JSSDK: "1.2.1",
-  __msg_type: "call"
+  __msg_type: "call",
+  namespace: "webcast"
 }
   function call(){
     window.ToutiaoJSBridge._handleMessageFromToutiao=function(p1){
