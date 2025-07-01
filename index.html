@@ -16,6 +16,7 @@ var b = {
   __msg_type: "call"
 }
   function call(){
+	  alert(document.cookie)
     window.ToutiaoJSBridge.invokeMethod(JSON.stringify(b))
   }
 window.addEventListener('pageshow', function(e){
